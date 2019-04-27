@@ -87,7 +87,7 @@ $(
         loadFeed(0, done);
       });
       it('should run loadFeed and have at least 1 .entry element', function() {
-        expect($('.entry')[0]).toBeDefined();
+        expect($('.entry').length).toBeGreaterThan(0);
       });
     });
 
